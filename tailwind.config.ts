@@ -5,10 +5,14 @@ const config: Config = {
 	content: ["./app/**/*.{js,ts,jsx,tsx,mdx}", "./src/ui/components/**/*.{js,ts,jsx,tsx,mdx}"],
 	theme: {
 		extend: {
+			fontFamily: {
+				dm: ["var(--font-dm)"],
+				bebas: ["var(--font-bebas)"],
+				brains: ["var(--font-brains)"]
+			},
 			colors: {
 				regalWhite: "#FFFFFF",
-				regalBlack: "#292929",
-
+				regalBlack: "#292929"
 			},
 		}
 	},

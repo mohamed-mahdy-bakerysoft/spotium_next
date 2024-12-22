@@ -18,7 +18,11 @@ export const Burger = () => {
             onMouseLeave={() => setIsHovered(false)}
             className="flex justify-center items-center cursor-pointer"
         >
-            <div>Menu</div>
+            <div
+                className="uppercase text-[4.8rem] font-bebas"
+            >
+                Menu
+            </div>
             <div className="w-[6.359rem] h-[6.359rem] flex justify-center items-center">
                 <div className={cn(
                     "w-full h-[4.28rem] bg-regalWhite rounded-[3rem] relative",

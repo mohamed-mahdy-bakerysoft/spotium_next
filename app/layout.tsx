@@ -1,10 +1,34 @@
 "use strict";
 
+import { JetBrains_Mono, Bebas_Neue, DM_Sans } from 'next/font/google';
 import type { Metadata } from "next";
 
 import { Header } from "@/src/ui/components/organisms/Header/Header";
-
 import "./globals.scss";
+
+const brains = JetBrains_Mono({
+  weight: "400",
+  variable: '--font-brains',
+  style: ['normal'],
+  subsets: ['cyrillic', 'latin'],
+  display: 'swap',
+})
+
+const bebas = Bebas_Neue({
+  weight: "400",
+  variable: '--font-bebas',
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+const dm = DM_Sans({
+  weight: "400",
+  variable: '--font-dm',
+  style: ['normal'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +42,7 @@ interface RootLayoutType {
 export default function RootLayout({ children }: RootLayoutType) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>
+      <body className={`${brains.variable} ${bebas.variable} ${dm.variable} ${brains.className} antialiased`}>
         <Header />
         <main>
           {children}
