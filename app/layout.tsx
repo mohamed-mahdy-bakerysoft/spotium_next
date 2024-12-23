@@ -3,7 +3,8 @@
 import { JetBrains_Mono, Bebas_Neue, DM_Sans } from 'next/font/google';
 import type { Metadata } from "next";
 
-import { Header } from "@/src/ui/components/organisms/Header/Header";
+import { Header } from "@/src/ui/components/organisms/Header";
+import { Footer } from '@/src/ui/components/organisms/Footer';
 import "./globals.scss";
 
 const brains = JetBrains_Mono({
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: RootLayoutType) {
         <main>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );

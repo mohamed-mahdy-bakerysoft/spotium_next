@@ -42,6 +42,11 @@ html {
       width: 100%;
       flex-grow: 1;
     }
+
+    footer {
+      width: 100%;
+      border-top: 2px solid $base-color-white;
+    }
   }
 
   * {

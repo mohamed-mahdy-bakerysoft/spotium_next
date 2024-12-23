@@ -9,7 +9,7 @@ export const Header = () => {
     return (
         <header>
             <Container
-                className="flex justify-between items-center"
+                className="flex justify-between items-center py-[1.5rem]"
             >
                 <Logo />
                 <Burger />

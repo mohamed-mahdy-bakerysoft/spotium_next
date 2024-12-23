@@ -16,11 +16,9 @@ export const Burger = () => {
         <div
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="flex justify-center items-center cursor-pointer"
+            className="flex justify-center items-center cursor-pointer gap-x-[1.5rem]"
         >
-            <div
-                className="uppercase text-[4.8rem] font-bebas"
-            >
+            <div className="uppercase text-[4.8rem] font-bebas tracking-wide">
                 Menu
             </div>
             <div className="w-[6.359rem] h-[6.359rem] flex justify-center items-center">

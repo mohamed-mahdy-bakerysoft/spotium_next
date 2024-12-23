@@ -1,0 +1,1 @@
+export { CopyrightNotice } from './CopyrightNotice';
