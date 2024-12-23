@@ -1,0 +1,1 @@
+export { SpotiumLayout } from './SpotiumLayout';
