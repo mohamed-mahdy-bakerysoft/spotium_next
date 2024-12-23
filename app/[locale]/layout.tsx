@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 interface RootLayoutType {
   children: React.ReactNode;
-}
+};
 
 export default async function RootLayout({ children }: RootLayoutType) {
 
@@ -28,4 +28,4 @@ export default async function RootLayout({ children }: RootLayoutType) {
       </SpotiumLayout>
     </NextIntlClientProvider>
   );
-}
+};
